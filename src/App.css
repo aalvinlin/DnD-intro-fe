@@ -5,16 +5,70 @@
 body {
     font-size: 62.5%;
     font-family: Arial;
+
+    background-color: #EEEEDD;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3.5rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* main page content */
+
+.content {
+
+    width: 100%;
+    height: 95vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-signup-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.large-button {
+
+    display: block;
+
+    width: 25vh;
+
+    font-size: 2rem;
+    line-height: 4rem;
+
+    background-color: #222222;
+    color: white;
+
+    border: none;
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    margin: 0 2rem;
+}
+
+.large-button:hover, .large-button:active {
+    background-color: #666666;
+}
+
+.large-button a {
+    color: white;
 }
