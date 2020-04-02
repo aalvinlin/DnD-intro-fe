@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
-import { getBonusFormatted } from "../../utils/utils";
+import { getAbilityScoreBonus, formatBonus } from "../../utils/utils";
 
 const AbilityScores = ({character}) => {
 
@@ -23,7 +23,7 @@ const AbilityScores = ({character}) => {
           {Object.keys(character.abilityScores).map(ability => {
 
             let abilityScore = character.abilityScores[ability];
-            let bonus = getBonusFormatted(abilityScore);
+            let bonus = formatBonus(getAbilityScoreBonus(abilityScore));
 
             return (
               <div className="ability_score_container">
