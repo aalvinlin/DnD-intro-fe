@@ -10,7 +10,7 @@ const SavingThrows = ({character}) => {
 
       <SectionTitle number="3" title="Saving Throws" />
 
-      <div className="saving_throws placeholder">
+      <div className="saving_throws">
 
         {
           Object.keys(character.savingThrowProficiencies).map(ability => {
@@ -23,9 +23,9 @@ const SavingThrows = ({character}) => {
 
             return (
               <div className="proficiency_info">
-                <p className="bonus">{formatBonus(savingThrowBonus)}</p>
+                <p className="saving_throw_bonus">{formatBonus(savingThrowBonus)}</p>
                 <div className={"proficiencyCircle " + (isProficient ? "proficient" : "")}></div>
-                <p>{abilityScoreFullNames[ability]}</p>
+                <p className="saving_throw_name">{abilityScoreFullNames[ability]}</p>
               </div>
             )
           })

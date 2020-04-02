@@ -171,7 +171,43 @@
 
 .saving_throws {
 
-    min-height: 10vh;
+}
+
+.proficiency_info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.proficiency_info p {
+    color: #663300;
+    margin: 0.25rem 0;
+}
+
+.saving_throw_bonus {
+    width: 1rem;
+    margin: 0 0.5rem;
+    text-align: right;
+
+    font-weight: bold;
+}
+
+.proficiencyCircle {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #CCCCBB;
+    border-radius: 50%;
+    background-color: transparent;
+
+    margin: 0 0.5rem;
+}
+
+.proficiencyCircle.proficient {
+    background-color: #CCCCBB;
+}
+
+.saving_throw_name {
+    font-size: 0.75rem;
 }
 
 /** Skills section **/
