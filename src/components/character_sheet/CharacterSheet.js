@@ -2,7 +2,7 @@ import React from "react";
 
 import CharacterProfile from "./CharacterProfile";
 import AbilityScores from "./AbilityScores";
-import ProficiencyScore from "./ProficiencyScore";
+import ProficiencyBonus from "./ProficiencyBonus";
 import SavingThrows from "./SavingThrows";
 import Skills from "./Skills";
 import StatBlock from "./StatBlock";
@@ -30,7 +30,7 @@ const CharacterSheet = () => {
                     <AbilityScores character={sampleCharacter} />
                 </div>
                 <div className="character_sheet_column">
-                    <ProficiencyScore character={sampleCharacter} />
+                    <ProficiencyBonus character={sampleCharacter} />
                     <SavingThrows character={sampleCharacter} />
                     <Skills character={sampleCharacter} />
                 </div>
