@@ -11,6 +11,7 @@
     },
     "vitalStats": {
         "ac": 15,
+        "initiativeBonus": 2,
         "speed": 30,
         "hpCurrent": 13,
         "hpMax": 13
@@ -23,6 +24,7 @@
         "wis": 12,
         "cha": 11
     },
+    "proficiencyBonus": 2,
     "savingThrowProficiencies": {
         "str": true,
         "dex": false,
