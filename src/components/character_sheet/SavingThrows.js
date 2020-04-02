@@ -1,10 +1,13 @@
 import React from "react";
+import SectionTitle from "./SectionTitle";
 
-const SavingThrows = () => {
+const SavingThrows = ({character}) => {
 
   return (
     <div className="saving_throws">
-        Saving Throws
+
+      <SectionTitle number="3" title="Saving Throws" />
+
     </div>
   );
 }

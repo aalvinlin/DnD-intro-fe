@@ -6,11 +6,14 @@ import ProficiencyScore from "./ProficiencyScore";
 import SavingThrows from "./SavingThrows";
 import Skills from "./Skills";
 import StatBlock from "./StatBlock";
-import Weapons from "./Weapons";
-import Armour from "./Armour";
-import Items from "./Items";
-import SpellsAbilities from "./SpellsAbilities";
-import Proficiencies from "./Proficiencies";
+import Equipment from "./Equipment";
+import Abilities from "./Abilities";
+
+// import Weapons from "./Weapons";
+// import Armour from "./Armour";
+// import Items from "./Items";
+// import SpellsAbilities from "./SpellsAbilities";
+// import Proficiencies from "./Proficiencies";
 
 import "./CharacterSheet.css";
 
@@ -33,7 +36,10 @@ const CharacterSheet = () => {
                 </div>
                 <div className="character_sheet_column">
                     <StatBlock character={sampleCharacter} />
-                    <div className="equipment">
+                    <Equipment character={sampleCharacter} />
+                    <Abilities character={sampleCharacter} />
+                    
+                    {/* <div className="equipment">
                         <Weapons character={sampleCharacter} />
                         <Armour character={sampleCharacter} />
                         <Items character={sampleCharacter} />
@@ -41,7 +47,7 @@ const CharacterSheet = () => {
                     <div className="proficiencies">
                         <SpellsAbilities character={sampleCharacter} />
                         <Proficiencies character={sampleCharacter} />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
