@@ -15,32 +15,33 @@ import Proficiencies from "./Proficiencies";
 import "./CharacterSheet.css";
 
 import logo from "../../images/logo_small.png";
+import sampleCharacter from "../../data/sampleCharacter";
 
 const CharacterSheet = () => {
 
   return (
     <div className="content">
         <div className="character_sheet">
-            <CharacterProfile />
+            <CharacterProfile character={sampleCharacter} />
             <div className="character_sheet_main_section">
                 <div className="character_sheet_column">
-                    <AbilityScores />
+                    <AbilityScores character={sampleCharacter} />
                 </div>
                 <div className="character_sheet_column">
-                    <ProficiencyScore />
-                    <SavingThrows />
-                    <Skills />
+                    <ProficiencyScore character={sampleCharacter} />
+                    <SavingThrows character={sampleCharacter} />
+                    <Skills character={sampleCharacter} />
                 </div>
                 <div className="character_sheet_column">
-                    <StatBlock />
+                    <StatBlock character={sampleCharacter} />
                     <div className="equipment">
-                        <Weapons />
-                        <Armour />
-                        <Items />
+                        <Weapons character={sampleCharacter} />
+                        <Armour character={sampleCharacter} />
+                        <Items character={sampleCharacter} />
                     </div>
                     <div className="proficiencies">
-                        <SpellsAbilities />
-                        <Proficiencies />
+                        <SpellsAbilities character={sampleCharacter} />
+                        <Proficiencies character={sampleCharacter} />
                     </div>
                 </div>
             </div>
