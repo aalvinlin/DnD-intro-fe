@@ -1,0 +1,100 @@
+{
+    "id": 1,
+    "profile": {
+        "name": "Westrin Umbreder",
+        "class": "fighter",
+        "race": "human",
+        "level": 1,
+        "background": "soldier",
+        "exp": 120
+    },
+    "vitalStats": {
+        "ac": 15,
+        "speed": 30,
+        "hpCurrent": 13,
+        "hpMax": 13
+    },
+    "abilityScores": {
+        "str": 13,
+        "dex": 14,
+        "con": 15,
+        "int": 10,
+        "wis": 12,
+        "cha": 11
+    },
+    "savingThrowProficiencies": {
+        "str": true,
+        "dex": false,
+        "con": true,
+        "int": false,
+        "wis": false,
+        "cha": false
+    },
+    "skillProficiencies": {
+        "acrobatics": false,
+        "animalHandling": false,
+        "arcana": false,
+        "athletics": true,
+        "deception": false,
+        "history": false,
+        "insight": false,
+        "intimidation": true,
+        "investigation": false,
+        "medicine": true,
+        "nature": false,
+        "perception": false,
+        "performance": false,
+        "religion": false,
+        "sleightOfHand": false,
+        "stealth": false,
+        "survival": true
+    },
+    "weapons": [
+        {
+            "name": "battleaxe",
+            "attackBonus": 2,
+            "damageDieType": 8,
+            "damageDieNumber": 1,
+            "damageType": "slashing"
+        },
+        {
+            "name": "shortbow",
+            "attackBonus": 2,
+            "damageDieType": 6,
+            "damageDieNumber": 1,
+            "damageType": "piercing"
+        }
+    ],
+    "armour": [
+        {
+            "name": "studded leather",
+            "armourBonus": 2
+        }
+    ],
+    "items": [
+        {
+            "name": "waterskin",
+            "quantity": 2
+        },
+        {
+            "name": "rations",
+            "quantity": 5
+        },
+        {
+            "name": "bullseye lantern",
+            "quantity": 1
+        }
+    ],
+    "spells": [],
+    "proficiencies": ["simple weapons", "martial weapons", "armour"],
+    "abilities": [
+        {
+            "name": "Second Wind",
+            "effect": "Heal 1d10 + level (bonus action)"
+        },
+        {
+            "name": "Action Surge",
+            "effect": "Extra attack"
+        }
+    ]
+}
