@@ -61,6 +61,12 @@
     margin-left: 2rem;
 }
 
+/** Parent container for sections **/
+
+.section_container {
+    width: 100%;
+}
+
 /** Section titles **/
 
 .section_title_container {
@@ -146,4 +152,30 @@
     margin: 0;
 
     color: #996633;
+}
+
+/** placeholder section **/
+.placeholder {
+    background-color: #DDDDCC;
+    border-radius: 3px;
+}
+
+/** Proficiency score section **/
+
+.proficiency_score {
+
+    min-height: 5vh;
+}
+
+/** Saving Throws section **/
+
+.saving_throws {
+
+    min-height: 10vh;
+}
+
+/** Skills section **/
+
+.skills {
+    min-height: 20vh;
 }

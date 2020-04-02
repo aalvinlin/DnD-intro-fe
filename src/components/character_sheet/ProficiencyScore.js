@@ -4,11 +4,11 @@ import SectionTitle from "./SectionTitle";
 const ProficiencyScore = ({character}) => {
 
   return (
-    <div className="proficiency_score">
+    <div className="section_container">
         
         <SectionTitle number="2" title="Proficiency Score" />
 
-        <div className="proficiency_score_value">
+        <div className="proficiency_score placeholder">
         
         </div>
 
