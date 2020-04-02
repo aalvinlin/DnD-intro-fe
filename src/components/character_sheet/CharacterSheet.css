@@ -13,7 +13,7 @@
 }
 
 .character_sheet_column {
-    width: 30%;
+    
 }
 
 /** Character Profile section **/
@@ -56,12 +56,40 @@
     margin-left: 2rem;
 }
 
+/** Section titles **/
+
+.section_title_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_title_container .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 0.5rem;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    width: 2rem;
+    height: 2rem;
+
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.section_title_container .section_title {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
 
 /** Ability Score section **/
 
 .ability_scores {
-
-    height: 90vh;
 
     display: flex;
     flex-direction: column;

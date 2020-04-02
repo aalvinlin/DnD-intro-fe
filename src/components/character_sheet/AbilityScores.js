@@ -13,23 +13,31 @@ const AbilityScores = ({character}) => {
   };
 
   return (
-    <div className="ability_scores">
+    <div className="section_container">
+      
+      <div className="section_title_container">
+          <div className="number">1</div>
+          <h2 className="section_title">Ability Scores</h2>
+      </div>
 
-        {Object.keys(character.abilityScores).map(ability => {
+      <div className="ability_scores">
 
-          let abilityScore = character.abilityScores[ability];
-          let bonus = getBonusFormatted(abilityScore);
+          {Object.keys(character.abilityScores).map(ability => {
 
-          return (
-            <div className="ability_score_container">
-              <h3 className="full_name">{fullNames[ability]}</h3>
-              <div className="ability_score">
-                <p className="bonus">{bonus}</p>
-                <p className="value">({abilityScore})</p>
+            let abilityScore = character.abilityScores[ability];
+            let bonus = getBonusFormatted(abilityScore);
+
+            return (
+              <div className="ability_score_container">
+                <h3 className="full_name">{fullNames[ability]}</h3>
+                <div className="ability_score">
+                  <p className="bonus">{bonus}</p>
+                  <p className="value">({abilityScore})</p>
+                </div>
               </div>
-            </div>
-          )
-        })}
+            )
+          })}
+      </div>
     </div>
   );
 }
