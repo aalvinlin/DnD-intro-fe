@@ -12,3 +12,12 @@ export const formatBonus = (bonus) => {
     else
         { return bonus; }
 }
+
+export const abilityScoreFullNames = {
+    "str": "Strength",
+    "dex": "Dexterity",
+    "con": "Constitution",
+    "int": "Intelligence",
+    "wis": "Wisdom",
+    "cha": "Charisma"
+  };

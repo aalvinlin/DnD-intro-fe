@@ -1,17 +1,8 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
-import { getAbilityScoreBonus, formatBonus } from "../../utils/utils";
+import { getAbilityScoreBonus, formatBonus, abilityScoreFullNames } from "../../utils/utils";
 
 const AbilityScores = ({character}) => {
-
-  let fullNames = {
-    "str": "Strength",
-    "dex": "Dexterity",
-    "con": "Constitution",
-    "int": "Intelligence",
-    "wis": "Wisdom",
-    "cha": "Charisma"
-  };
 
   return (
     <div className="section_container">
@@ -27,7 +18,7 @@ const AbilityScores = ({character}) => {
 
             return (
               <div className="ability_score_container">
-                <h3 className="full_name">{fullNames[ability]}</h3>
+                <h3 className="full_name">{abilityScoreFullNames[ability]}</h3>
                 <div className="ability_score">
                   <p className="bonus">{bonus}</p>
                   <p className="value">({abilityScore})</p>
