@@ -15,3 +15,47 @@
 .character_sheet_column {
     width: 30%;
 }
+
+/** Ability Score section **/
+
+.ability_scores {
+
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ability_score {
+    border: 2px solid #996633;
+    border-radius: 3px;
+    
+    text-align: center;
+    
+    padding: 0.25rem;
+}
+
+.ability_score .full_name {
+
+    font-size: 1rem;
+    margin: 0;
+
+    color: #663300;
+}
+
+.ability_score .bonus {
+
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+
+}
+
+.ability_score .value {
+
+    font-size: 1rem;
+    margin: 0;
+
+    color: #996633;
+}

@@ -23,7 +23,7 @@ const AbilityScores = ({character}) => {
             <div className="ability_score">
               <h3 className="full_name">{fullNames[ability]}</h3>
               <p className="bonus">{bonus}</p>
-              <p className="value">{abilityScore}</p>
+              <p className="value">({abilityScore})</p>
             </div>
           )
         })}
