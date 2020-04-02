@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: Arial;
+
+    background-color: #EEEEDD;
+
+    margin: 0;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* main page content */
+
+.content {
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.login-signup-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.large-button {
+
+    display: block;
+
+    width: 25vh;
+
+    font-size: 2rem;
+    line-height: 4rem;
+
+    background-color: #222222;
+    color: white;
+
+    border: none;
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    margin: 0 2rem;
+}
+
+.large-button:hover, .large-button:active {
+    background-color: #666666;
+}
+
+.large-button a {
+    color: white;
+}
+
+/** Image sizes **/
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-small {
+    width: 50%;
+}
+
+/** Login, signup form container **/
+
+.login-signup-form-container {
+
+    margin-top: 1rem;
+    text-align: right;
+
+}
+
+.login-signup-form-container div {
+    margin: 0.5rem auto;    
+    margin-bottom: 1rem;
+
+}
+
+.login-signup-form-container label {
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    margin-right: 1rem;
+
+}
+
+.login-signup-form-container input {
+
+    font-size: 2rem;
+    margin-right: 1rem;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #666666;
+
+    color: #996633;
+}
+
+.login-signup-form-container .large-button {
+    margin: 3rem auto;
+}
+
+.input-error {
+    font-size: 1rem;
+    color: #C80000;
+}
+
+/** Media queries for screen sizes under 1300px **/
+
+@media screen and (max-width: 1300px) {
+
+    h1 {
+        font-size: 3.5rem;
+        margin: 1rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    .logo {
+        width: 320px;
+    }
+
+    .logo-small {
+        width: 240px;
+    }
+
+
+    .large-button {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+    .login-signup-form-container {
+        margin: 0;
+    }
+
+    .login-signup-form-container input {
+        margin-bottom: 0.5rem;
+    }
+
+    .login-signup-form-container .large-button {
+        margin: 1.5rem auto;
+    }
+
+}
+
