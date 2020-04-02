@@ -179,3 +179,24 @@
 .skills {
     min-height: 20vh;
 }
+
+
+/** Vital Stats section **/
+
+.stat_block {
+    min-height: 10vh;
+}
+
+
+/** Equipment section **/
+
+.equipment {
+    min-height: 20vh;
+}
+
+
+/** Abilities section **/
+
+.abilities {
+    min-height: 20vh;
+}
