@@ -12,7 +12,9 @@ import Items from "./Items";
 import SpellsAbilities from "./SpellsAbilities";
 import Proficiencies from "./Proficiencies";
 
-import logo from "../images/logo_small.png";
+import "./CharacterSheet.css";
+
+import logo from "../../images/logo_small.png";
 
 const CharacterSheet = () => {
 

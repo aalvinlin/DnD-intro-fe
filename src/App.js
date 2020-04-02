@@ -5,6 +5,8 @@ import Home from "./components/Home";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 
+import CharacterSheet from "./components/character_sheet/CharacterSheet";
+
 import "./App.css";
 
 const App = () => {
@@ -21,7 +23,7 @@ const App = () => {
         </Route>
 
         <Route path="/character_sheet">
-          <Signup />
+          <CharacterSheet />
         </Route>
 
         <Route path="/">

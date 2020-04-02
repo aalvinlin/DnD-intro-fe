@@ -1,0 +1,17 @@
+* {
+    font-size: 1rem;
+}
+
+.character_sheet {
+    max-width: 1280px;
+    min-height: 100vh;
+}
+
+.character_sheet_main_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.character_sheet_column {
+    width: 30%;
+}
