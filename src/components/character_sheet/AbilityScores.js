@@ -14,16 +14,19 @@ const AbilityScores = ({character}) => {
 
   return (
     <div className="ability_scores">
+
         {Object.keys(character.abilityScores).map(ability => {
 
           let abilityScore = character.abilityScores[ability];
           let bonus = getBonusFormatted(abilityScore);
 
           return (
-            <div className="ability_score">
+            <div className="ability_score_container">
               <h3 className="full_name">{fullNames[ability]}</h3>
-              <p className="bonus">{bonus}</p>
-              <p className="value">({abilityScore})</p>
+              <div className="ability_score">
+                <p className="bonus">{bonus}</p>
+                <p className="value">({abilityScore})</p>
+              </div>
             </div>
           )
         })}

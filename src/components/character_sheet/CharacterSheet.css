@@ -65,22 +65,37 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.ability_score_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin: 0.25rem;
 }
 
 .ability_score {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     border: 2px solid #996633;
     border-radius: 3px;
-    
-    text-align: center;
+
+    min-width: 4rem;
+    min-height: 4rem;
     
     padding: 0.25rem;
 }
 
-.ability_score .full_name {
+.ability_score_container .full_name {
 
     font-size: 1rem;
     margin: 0;
+    margin-right: 1rem;
 
     color: #663300;
 }
@@ -90,12 +105,11 @@
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
-
 }
 
 .ability_score .value {
 
-    font-size: 1rem;
+    font-size: 0.75rem;
     margin: 0;
 
     color: #996633;
