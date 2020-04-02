@@ -1,13 +1,13 @@
-export const getBonus = (abilityScore) => {
+// find the bonus associated with an ability score
+// returns an integer so that the result can be added to other modifiers
+export const getAbilityScoreBonus = (abilityScore) => {
     return Math.floor((abilityScore - 10) / 2);
 }
 
-export const getBonusFormatted = (abilityScore) => {
-    let bonus = getBonus(abilityScore);
-
-    if (bonus < 0)
-        { return "-" + bonus; }
-    else if (bonus > 0)
+// formats an integer, adding a "+" sign if positive
+// negative and zero stay the same
+export const formatBonus = (bonus) => {
+    if (bonus > 0)
         { return "+" + bonus; }
     else
         { return bonus; }
