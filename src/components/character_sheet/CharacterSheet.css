@@ -16,6 +16,47 @@
     width: 30%;
 }
 
+/** Character Profile section **/
+
+.character_profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 20vh;
+}
+
+.portrait {
+    height: 96px;
+
+    margin-right: 2rem;
+}
+
+.character_profile_text {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    color: #663300;
+
+}
+
+.character_profile_text p {
+    font-size: 1.25rem;
+    margin: 0.125rem 0;
+}
+
+.character_profile_text .character_name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.character_profile_text .character_class_race_level, .character_profile_text .exp {
+    margin-left: 2rem;
+}
+
+
 /** Ability Score section **/
 
 .ability_scores {

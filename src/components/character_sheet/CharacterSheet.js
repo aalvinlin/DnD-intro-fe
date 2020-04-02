@@ -14,7 +14,6 @@ import Proficiencies from "./Proficiencies";
 
 import "./CharacterSheet.css";
 
-import logo from "../../images/logo_small.png";
 import sampleCharacter from "../../data/sampleCharacter";
 
 const CharacterSheet = () => {
